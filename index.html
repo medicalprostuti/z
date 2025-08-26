@@ -20,7 +20,7 @@
 
       .subject-container {
         width: 90%;
-        max-width: 600px; /* Increased width slightly */
+        max-width: 600px;
         background: #ffffff;
         padding: 25px 30px;
         border-radius: 15px;
@@ -31,6 +31,7 @@
         text-align: center;
         color: #2c3e50;
         margin-bottom: 25px;
+        font-family: "Hind Siliguri", sans-serif;
       }
 
       /* --- Dropdown Styling --- */
@@ -55,6 +56,7 @@
         justify-content: space-between;
         align-items: center;
         box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
+        font-family: "Hind Siliguri", sans-serif;
       }
 
       .dropdown-btn:hover {
@@ -62,7 +64,7 @@
       }
 
       .dropdown-btn:active {
-        transform: scale(0.99); /* Slight press effect */
+        transform: scale(0.99);
       }
 
       /* Arrow Icon using a pseudo-element */
@@ -70,7 +72,7 @@
         content: "▶";
         font-size: 12px;
         transform: rotate(0deg);
-        transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55); /* Bouncy effect */
+        transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
       }
 
       /* Rotate arrow when dropdown is active/open */
@@ -81,20 +83,16 @@
       /* --- Dropdown Content & Animation --- */
       .dropdown-content {
         background-color: #f9f9f9;
-        /* Hide content by default */
         max-height: 0;
         overflow: hidden;
         margin-top: 5px;
         border-radius: 10px;
         box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.05);
-        /* Smooth transition for the slide-down effect */
-        transition: max-height 0.8s ease-in-out; /* Slightly slower for longer lists */
+        transition: max-height 0.8s ease-in-out;
       }
 
       /* Class added by JavaScript to show the content */
       .dropdown-content.show {
-        /* Increased max-height to accommodate 60+ topics.
-       This value should be larger than the height of your longest topic list. */
         max-height: 2000px;
       }
 
@@ -106,6 +104,7 @@
         display: block;
         transition: background-color 0.2s ease, padding-left 0.2s ease;
         border-bottom: 1px solid #e0e0e0;
+        font-family: "Hind Siliguri", sans-serif;
       }
 
       .dropdown-content a:last-child {
@@ -122,14 +121,13 @@
   <body>
     <div class="subject-container" id="subject-menu">
       <h1>জুলজি</h1>
-      <!-- The dropdown menu will be dynamically generated here -->
-    </div>
+      </div>
 
     <script>
       const chaptersData = [
         {
           id: "ch1",
-          title: "অধ্যায়-১: প্রাণির বিভিন্নতা ও শ্রেণিবিন্যাস",
+          title: "অধ্যায়-১: প্রাণির বিভিন্নতা ও শ্রেণিবিন্যাস",
           topics: [
             {
               title: "১.১ - প্রাণীর বিভিন্নতা ও শ্রেণী বিন্যাস",
@@ -147,7 +145,7 @@
         },
         {
           id: "ch2",
-          title: "অধ্যায়-২: প্রাণির পরিচিতিঃ হাইড্রা",
+          title: "অধ্যায়-২: প্রাণির পরিচিতিঃ হাইড্রা",
           topics: [
             {
               title: "২.১ - হাইড্রার সাধারণ পরিচিতি ও গঠণ",
@@ -165,7 +163,7 @@
         },
         {
           id: "ch3",
-          title: "অধ্যায়-৩: প্রাণির পরিচিতিঃ ঘাসফড়িং",
+          title: "অধ্যায়-৩: প্রাণির পরিচিতিঃ ঘাসফড়িং",
           topics: [
             {
               title: "৩.১ - সাধারণ পরিচিতি ও গঠন",
@@ -180,14 +178,14 @@
               url: "https://medicalprostuti.github.io/z9/",
             },
             {
-              title: "৩.৪ - সংবেদী অঙ্গ, প্রজন প্রক্তিয়া ও রুপান্তর",
+              title: "৩.৪ - সংবেদী অঙ্গ, প্রজন প্রক্তিয়া ও রুপান্তর",
               url: "https://medicalprostuti.github.io/z10/",
             },
           ],
         },
         {
           id: "ch4",
-          title: "অধ্যায়-৪: প্রাণির পরিচিতিঃ রুই মাছ",
+          title: "অধ্যায়-৪: প্রাণির পরিচিতিঃ রুই মাছ",
           topics: [
             {
               title: "৪.১ - সাধারণ পরিচিতি ও বাহ্যিক গঠন",
@@ -205,7 +203,7 @@
         },
         {
           id: "ch5",
-          title: "অধ্যায়-৫: পরিপাক ও শোষণ",
+          title: "অধ্যায়-৫: পরিপাক ও শোষণ",
           topics: [
             {
               title:
@@ -221,7 +219,7 @@
               url: "https://medicalprostuti.github.io/z16/",
             },
             {
-              title: "৫.৪ - পরিপাকে স্নায়ুতন্ত্র ও হরমোনের ভূমিকা",
+              title: "৫.৪ - পরিপাকে স্নায়ুতন্ত্র ও হরমোনের ভূমিকা",
               url: "https://medicalprostuti.github.io/z17/",
             },
             {
@@ -232,7 +230,7 @@
         },
         {
           id: "ch6",
-          title: "অধ্যায়-৬: মানব শারীরতত্ত্বঃ রক্ত সংবহন",
+          title: "অধ্যায়-৬: মানব শারীরতত্ত্বঃ রক্ত সংবহন",
           topics: [
             {
               title: "৬.১ - রক্ত",
@@ -243,11 +241,11 @@
               url: "https://medicalprostuti.github.io/z20/",
             },
             {
-              title: "৬.৩ - কার্ডিয়াক চক্র",
+              title: "৬.৩ - কার্ডিয়াক চক্র",
               url: "https://medicalprostuti.github.io/z21/",
             },
             {
-              title: "৬.৪ - রক্তচাপ নিয়ন্ত্রনে ব্যারো রিসেপ্টরের ভূমিকা",
+              title: "৬.৪ - রক্তচাপ নিয়ন্ত্রনে ব্যারো রিসেপ্টরের ভূমিকা",
               url: "https://medicalprostuti.github.io/z22/",
             },
             {
@@ -262,7 +260,7 @@
         },
         {
           id: "ch7",
-          title: "অধ্যায়-৭: মানুষের শ্বসনতন্ত্র",
+          title: "অধ্যায়-৭: মানুষের শ্বসনতন্ত্র",
           topics: [
             {
               title: "৭.১ - মানুষের শ্বসনতন্ত্র",
@@ -273,7 +271,7 @@
               url: "https://medicalprostuti.github.io/z26/",
             },
             {
-              title: "৭.৩ - গ্যাসীয় পরিবহন ও শ্বসনে শ্বাসরঞ্জকের ভূমিকা",
+              title: "৭.৩ - গ্যাসীয় পরিবহন ও শ্বসনে শ্বাসরঞ্জকের ভূমিকা",
               url: "https://medicalprostuti.github.io/z27/",
             },
             {
@@ -293,29 +291,29 @@
               url: "https://medicalprostuti.github.io/z31/",
             },
             {
-              title: "৭.৮ - বৃক্ক বিকল ও বৃক্কের হরমোনাল ক্রিয়া",
+              title: "৭.৮ - বৃক্ক বিকল ও বৃক্কের হরমোনাল ক্রিয়া",
               url: "https://medicalprostuti.github.io/z32/",
             },
           ],
         },
         {
           id: "ch8",
-          title: "অধ্যায়-৮: মানব শারীরতত্ত্বঃ চলন ও অঙ্গচালনা",
+          title: "অধ্যায়-৮: মানব শারীরতত্ত্বঃ চলন ও অঙ্গচালনা",
           topics: [
             {
               title: "৮.১ - কঙ্কালতন্ত্র",
               url: "https://medicalprostuti.github.io/z33/",
             },
             {
-              title: "৮.২ - অক্ষীয় কঙ্কালতন্ত্র",
+              title: "৮.২ - অক্ষীয় কঙ্কালতন্ত্র",
               url: "https://medicalprostuti.github.io/z34/",
             },
             {
-              title: "৮.৩ - মেরুদন্ড বা শিরাদাড়া বা স্পাইন",
+              title: "৮.৩ - মেরুদন্ড বা শিরাদাড়া বা স্পাইন",
               url: "https://medicalprostuti.github.io/z35/",
             },
             {
-              title: "৮.৪ - উপাঙীয় কঙ্কালতন্ত্র",
+              title: "৮.৪ - উপাঙীয় কঙ্কালতন্ত্র",
               url: "https://medicalprostuti.github.io/z36/",
             },
             {
@@ -334,10 +332,10 @@
         },
         {
           id: "ch9",
-          title: "অধ্যায়-৯: সমন্বয় ও নিঃসরন",
+          title: "অধ্যায়-৯: সমন্বয় ও নিঃসরন",
           topics: [
             {
-              title: "৯.১ - স্নায়ুতন্ত্র ও নিউরন",
+              title: "৯.১ - স্নায়ুতন্ত্র ও নিউরন",
               url: "https://medicalprostuti.github.io/z40/",
             },
             {
@@ -345,11 +343,11 @@
               url: "https://medicalprostuti.github.io/z41/",
             },
             {
-              title: "৯.৩ - করোটিক স্নায়ু",
+              title: "৯.৩ - করোটিক স্নায়ু",
               url: "https://medicalprostuti.github.io/z42/",
             },
             {
-              title: "৯.৪ - চোখ বা দর্শনেন্দ্রীয়",
+              title: "৯.৪ - চোখ বা দর্শনেন্দ্রীয়",
               url: "https://medicalprostuti.github.io/z43/",
             },
             {
@@ -357,14 +355,14 @@
               url: "https://medicalprostuti.github.io/z44/",
             },
             {
-              title: "৯.৬ - রাসায়নিক সমন্বয় ও হরমোন",
+              title: "৯.৬ - রাসায়নিক সমন্বয় ও হরমোন",
               url: "https://medicalprostuti.github.io/z45/",
             },
           ],
         },
         {
           id: "ch10",
-          title: "অধ্যায়-১০: মানব জীবনের ধারাবাহিকতা",
+          title: "অধ্যায়-১০: মানব জীবনের ধারাবাহিকতা",
           topics: [
             {
               title: "১০.১ - প্রজননতন্ত্র",
@@ -394,18 +392,18 @@
         },
         {
           id: "ch11",
-          title: "অধ্যায়-১১: মানবদেহের প্রতিরক্ষা",
+          title: "অধ্যায়-১১: মানবদেহের প্রতিরক্ষা",
           topics: [
             {
               title: "১১.১ - মানবদেহের প্রতিরক্ষা ব্যবস্থা",
               url: "https://medicalprostuti.github.io/z52/",
             },
             {
-              title: "১১.২ - ১ম ও ২য় প্রতিরক্ষা ব্যবস্থা",
+              title: "১১.২ - ১ম ও ২য় প্রতিরক্ষা ব্যবস্থা",
               url: "https://medicalprostuti.github.io/z53/",
             },
             {
-              title: "১১.৩ - ৩য় প্রতিরক্ষা স্তর",
+              title: "১১.৩ - ৩য় প্রতিরক্ষা স্তর",
               url: "https://medicalprostuti.github.io/z54/",
             },
             {
@@ -413,14 +411,14 @@
               url: "https://medicalprostuti.github.io/z55/",
             },
             {
-              title: "১১.৫ - প্রতিরক্ষা ব্যবস্থায় টিকার ভূমিকা",
+              title: "১১.৫ - প্রতিরক্ষা ব্যবস্থায় টিকার ভূমিকা",
               url: "https://medicalprostuti.github.io/z56/",
             },
           ],
         },
         {
           id: "ch12",
-          title: "অধ্যায়-১২: জিনতত্ত্ব ও বিবর্তন",
+          title: "অধ্যায়-১২: জিনতত্ত্ব ও বিবর্তন",
           topics: [
             {
               title: "১২.১ - বংশগতিবিদ্যা, জিনতত্ত্ব ও জেনেটিক্স",
@@ -450,7 +448,7 @@
         },
         {
           id: "ch13",
-          title: "অধ্যায়-১৩: প্রাণীর আচরণ",
+          title: "অধ্যায়-১৩: প্রাণীর আচরণ",
           topics: [
             {
               title: "১৩.১ - আচরণের প্রকৃতি ও সহজাত আচরণ",
@@ -461,7 +459,7 @@
               url: "https://medicalprostuti.github.io/z64/",
             },
             {
-              title: "১৩.৩ - প্রতিবর্ত ক্রিয়া ও সহজাত আবেগ",
+              title: "১৩.৩ - প্রতিবর্ত ক্রিয়া ও সহজাত আবেগ",
               url: "https://medicalprostuti.github.io/z65/",
             },
             {
@@ -470,31 +468,24 @@
             },
           ],
         },
-
-        // Add more chapters as needed
       ];
 
       document.addEventListener("DOMContentLoaded", function () {
         const menuContainer = document.getElementById("subject-menu");
 
-        // --- 1. Function to Generate the Menu ---
+        // Function to Generate the Menu
         function generateMenu() {
-          // Loop through each chapter in the data object
           chaptersData.forEach((chapter) => {
-            // Create the main container for the dropdown
             const dropdownDiv = document.createElement("div");
             dropdownDiv.className = "dropdown";
 
-            // Create the button for the chapter
             const button = document.createElement("button");
             button.className = "dropdown-btn";
             button.textContent = chapter.title;
 
-            // Create the container for the topics
             const contentDiv = document.createElement("div");
             contentDiv.className = "dropdown-content";
 
-            // Loop through the topics for the current chapter
             chapter.topics.forEach((topic) => {
               const link = document.createElement("a");
               link.textContent = topic.title;
@@ -502,16 +493,13 @@
               contentDiv.appendChild(link);
             });
 
-            // Assemble the parts
             dropdownDiv.appendChild(button);
             dropdownDiv.appendChild(contentDiv);
-
-            // Add the completed dropdown to the main container
             menuContainer.appendChild(dropdownDiv);
           });
         }
 
-        // --- 2. Function to Add Event Listeners ---
+        // Function to Add Event Listeners
         function attachEventListeners() {
           const allDropdownBtns =
             menuContainer.querySelectorAll(".dropdown-btn");
@@ -521,26 +509,20 @@
               const currentContent = this.nextElementSibling;
               const isAlreadyOpen = this.classList.contains("active");
 
-              // First, close all other dropdowns
               allDropdownBtns.forEach((otherBtn) => {
                 if (otherBtn !== this) {
-                  // Don't close the one we are interacting with yet
                   otherBtn.classList.remove("active");
                   otherBtn.nextElementSibling.classList.remove("show");
                 }
               });
 
-              // Toggle the clicked dropdown
               this.classList.toggle("active");
               currentContent.classList.toggle("show");
-
               event.stopPropagation();
             });
           });
 
-          // Optional: Close dropdowns if clicking outside
           window.addEventListener("click", function (event) {
-            // Check if the click was outside of any dropdown button
             if (!event.target.matches(".dropdown-btn")) {
               allDropdownBtns.forEach((btn) => {
                 btn.classList.remove("active");
@@ -550,7 +532,7 @@
           });
         }
 
-        // --- 3. Initialize the Menu ---
+        // Initialize the Menu
         generateMenu();
         attachEventListeners();
       });
